@@ -55,7 +55,7 @@ class PageController extends Controller
 
 
 
-    public function products()
+    public function product()
     {
 
         $products = [
@@ -66,6 +66,14 @@ class PageController extends Controller
 
         return view('product', compact('products'));
     }
+
+
+    public function productDetails($name)
+    {
+        return view('product-details', compact('name'));
+    }
+
+
 
 
 }
